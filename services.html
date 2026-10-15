@@ -46,20 +46,29 @@
 
   <main>
     <section class="services-hero" aria-labelledby="services-title">
-      <div class="services-hero-inner">
-        <p class="hero-eyebrow"><span></span> What we do</p>
-        <h1 id="services-title">Creative ideas.<br><span>Made real.</span></h1>
-        <p class="services-intro">
-          Our creative design and development services build bold brands and
-          engaging digital experiences that capture attention and tell your
-          unique story.
-        </p>
-        <a class="hero-cta" href="#service-list">
-          <span>Explore our services</span>
-          <span class="hero-cta-arrow" aria-hidden="true">↓</span>
-        </a>
+      <div class="services-hero-content">
+        <div class="services-hero-inner">
+          <p class="hero-eyebrow"><span></span> What we do</p>
+          <h1 id="services-title">Creative ideas.<br><span>Made real.</span></h1>
+          <p class="services-intro">
+            Our creative design and development services build bold brands and
+            engaging digital experiences that capture attention and tell your
+            unique story.
+          </p>
+          <a class="hero-cta" href="#service-list">
+            <span>Explore our services</span>
+            <span class="hero-cta-arrow" aria-hidden="true">↓</span>
+          </a>
+        </div>
       </div>
-      <p class="services-hero-index" aria-hidden="true">Services / 01—02</p>
+      <img
+        class="services-hero-image"
+        src="assets/services%20hero%20image.png"
+        alt="Abstract geometric forms floating in dramatic light"
+        width="1024"
+        height="581"
+      >
+      <p class="services-hero-index" aria-hidden="true">Services / 01—06</p>
     </section>
 
     <section class="services-list-section" id="service-list" aria-labelledby="service-list-title">
@@ -96,18 +105,163 @@
             <span class="service-card-icon service-card-icon-web" aria-hidden="true">&lt;/&gt;</span>
           </div>
           <div>
-            <h3>Web Development</h3>
+            <h3>Website and Content Management</h3>
             <p>
-              Responsive, user-friendly websites built to bring your organisation
-              online and make it easy for people to engage with you.
+              Responsive websites and practical content management tools that
+              make it easy to keep your digital presence useful and up to date.
             </p>
           </div>
           <a class="service-card-link" href="#contact">
-            <span>Discuss a website project</span>
+            <span>Discuss your website</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card-topline">
+            <span>03</span>
+            <span class="service-card-icon" aria-hidden="true">⌁</span>
+          </div>
+          <div>
+            <h3>Digital Strategy</h3>
+            <p>
+              A clear, practical digital roadmap that aligns your technology,
+              audience, and goals to create lasting progress.
+            </p>
+          </div>
+          <a class="service-card-link" href="#contact">
+            <span>Plan your digital strategy</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card-topline">
+            <span>04</span>
+            <span class="service-card-icon service-card-icon-web" aria-hidden="true">↗</span>
+          </div>
+          <div>
+            <h3>Technical Platform Optimization</h3>
+            <p>
+              Improve the performance, reliability, and usability of your
+              existing platforms so they work better for your organisation.
+            </p>
+          </div>
+          <a class="service-card-link" href="#contact">
+            <span>Optimize your platform</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card-topline">
+            <span>05</span>
+            <span class="service-card-icon service-card-icon-web" aria-hidden="true">&lt;/&gt;</span>
+          </div>
+          <div>
+            <h3>Custom Software Development</h3>
+            <p>
+              Purpose-built software designed around your workflows, helping
+              your team solve specific challenges and work more effectively.
+            </p>
+          </div>
+          <a class="service-card-link" href="#contact">
+            <span>Discuss custom software</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card-topline">
+            <span>06</span>
+            <span class="service-card-icon" aria-hidden="true">☁</span>
+          </div>
+          <div>
+            <h3>Cloud Infrastructure</h3>
+            <p>
+              Secure, scalable cloud foundations that support your applications,
+              data, and teams as your organisation grows.
+            </p>
+          </div>
+          <a class="service-card-link" href="#contact">
+            <span>Explore cloud solutions</span>
             <span aria-hidden="true">↗</span>
           </a>
         </article>
       </div>
+    </section>
+
+    <section class="technology-section" aria-labelledby="technology-title">
+      <div class="technology-heading">
+        <div>
+          <p class="services-kicker">Tools we work with</p>
+          <h2 id="technology-title">Technologies</h2>
+        </div>
+        <p>The platforms and technologies we use to build, improve, and support digital experiences.</p>
+      </div>
+
+      <ul class="technology-grid" aria-label="Technologies used">
+        <li class="technology-item">
+          <span class="technology-icon technology-icon-aws" aria-hidden="true">
+            <svg viewBox="0 0 64 48"><text x="5" y="29">aws</text><path d="M12 37c12 8 31 8 43-1M49 34l7 2-2 7"/></svg>
+          </span>
+          <span>AWS</span>
+        </li>
+        <li class="technology-item">
+          <span class="technology-icon technology-icon-azure" aria-hidden="true">
+            <svg viewBox="0 0 64 48"><path d="M28 5h13L23 42H10L28 5Zm15 5 12 32H27l7-11h6l-4-8 7-13Z"/></svg>
+          </span>
+          <span>Azure</span>
+        </li>
+        <li class="technology-item">
+          <span class="technology-icon technology-icon-cloudflare" aria-hidden="true">
+            <svg viewBox="0 0 64 48"><path d="M17 34h31a8 8 0 0 0 0-16 12 12 0 0 0-23-2 9 9 0 0 0-8 18Z"/><path d="M13 39h34M20 44h25"/></svg>
+          </span>
+          <span>Cloudflare</span>
+        </li>
+        <li class="technology-item">
+          <span class="technology-icon technology-icon-docker" aria-hidden="true">
+            <svg viewBox="0 0 64 48"><path d="M9 27h8v7H9zm10 0h8v7h-8zm10 0h8v7h-8zm0-9h8v7h-8zm10 9h8v7h-8zM8 36h42c-2 7-9 10-19 10H20c-7 0-11-3-12-10Z"/><path d="M48 28c3-3 6-3 9-1-2 3-5 4-9 4"/></svg>
+          </span>
+          <span>Docker</span>
+        </li>
+        <li class="technology-item">
+          <span class="technology-icon technology-icon-google" aria-hidden="true">
+            <svg viewBox="0 0 64 48"><path d="M32 8a16 16 0 0 1 14 8l-7 5a8 8 0 0 0-7-4 8 8 0 0 0-7 4l-7-5A16 16 0 0 1 32 8Z"/><path d="M18 16a16 16 0 0 0 0 16l8-4a8 8 0 0 1 0-8l-8-4Z"/><path d="M18 32a16 16 0 0 0 28 0l-8-4a8 8 0 0 1-14 0l-6 4Z"/><path d="M46 16a16 16 0 0 1 0 16l-8-4a8 8 0 0 0 0-8l8-4Z"/></svg>
+          </span>
+          <span>Google Cloud</span>
+        </li>
+        <li class="technology-item">
+          <span class="technology-icon technology-icon-mongo" aria-hidden="true">
+            <svg viewBox="0 0 64 48"><path d="M32 5c-2 9-11 14-10 24 1 8 6 12 10 14 5-4 10-10 9-18-1-8-6-12-9-20Z"/><path d="M32 15v29"/></svg>
+          </span>
+          <span>MongoDB</span>
+        </li>
+        <li class="technology-item">
+          <span class="technology-icon technology-icon-react" aria-hidden="true">
+            <svg viewBox="0 0 64 48"><ellipse cx="32" cy="24" rx="25" ry="9"/><ellipse cx="32" cy="24" rx="25" ry="9" transform="rotate(60 32 24)"/><ellipse cx="32" cy="24" rx="25" ry="9" transform="rotate(120 32 24)"/><circle cx="32" cy="24" r="3"/></svg>
+          </span>
+          <span>React</span>
+        </li>
+        <li class="technology-item">
+          <span class="technology-icon technology-icon-shopify" aria-hidden="true">
+            <svg viewBox="0 0 64 48"><path d="M20 17h24l4 26H16l4-26Z"/><path d="M25 19a7 7 0 0 1 14 0M26 30c4 3 8-3 12 0"/></svg>
+          </span>
+          <span>Shopify</span>
+        </li>
+        <li class="technology-item">
+          <span class="technology-icon technology-icon-rails" aria-hidden="true">
+            <svg viewBox="0 0 64 48"><path d="M32 5 52 16v16L32 43 12 32V16L32 5Z"/><text x="23" y="31">R</text></svg>
+          </span>
+          <span>Rails</span>
+        </li>
+        <li class="technology-item">
+          <span class="technology-icon technology-icon-woocommerce" aria-hidden="true">
+            <svg viewBox="0 0 64 48"><path d="M12 14h40l-4 19H18l-6-19Z"/><text x="19" y="29">W</text><path d="m21 33-4 8 12-8"/></svg>
+          </span>
+          <span>WooCommerce</span>
+        </li>
+      </ul>
     </section>
 
     <section class="services-contact" id="contact" aria-labelledby="services-contact-title">
