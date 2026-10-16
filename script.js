@@ -31,7 +31,7 @@ if (menuToggle && navigation) {
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 760) {
+    if (window.innerWidth > 900) {
       closeMenu();
     }
   });
@@ -105,6 +105,13 @@ document.querySelectorAll("[data-consultation-form]").forEach((form) => {
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+
+    // Bootstrap validation
+    if (!form.checkValidity()) {
+      form.classList.add("was-validated");
+      return;
+    }
+    form.classList.add("was-validated");
 
     const formData = new FormData(form);
     const name = String(formData.get("name") || "").trim();

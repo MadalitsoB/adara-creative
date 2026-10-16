@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,6 +9,7 @@
     content="Explore creative design and web development services from Adara Creative Edge."
   >
   <title>Services | Adara Creative Edge</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -60,13 +61,6 @@
           </a>
         </div>
       </div>
-      <img
-        class="services-hero-image"
-        src="assets/services%20hero%20image.png"
-        alt="Abstract geometric forms floating in dramatic light"
-        width="1024"
-        height="581"
-      >
       <p class="services-hero-index" aria-hidden="true">Services / 01—06</p>
     </section>
 
@@ -220,14 +214,14 @@
           <ul class="technology-track" id="technology-track" aria-label="Technologies used" tabindex="0">
             <li class="technology-item">
               <span class="technology-icon technology-icon-aws" aria-hidden="true">
-                <svg viewBox="0 0 64 48"><text x="5" y="29">aws</text><path d="M12 37c12 8 31 8 43-1M49 34l7 2-2 7"/></svg>
+                <img src="assets/aws.svg" alt="" loading="lazy">
               </span>
               <span class="technology-name">AWS</span>
               <span class="technology-category">Cloud infrastructure</span>
             </li>
             <li class="technology-item">
               <span class="technology-icon" aria-hidden="true">
-                <img src="assets/woo%20commerce.png" alt="" loading="lazy">
+                <img src="assets/Azure.png" alt="" loading="lazy">
               </span>
               <span class="technology-name">Azure</span>
               <span class="technology-category">Cloud platform</span>
@@ -241,14 +235,14 @@
             </li>
             <li class="technology-item">
               <span class="technology-icon technology-icon-docker" aria-hidden="true">
-                <svg viewBox="0 0 64 48"><path d="M9 27h8v7H9zm10 0h8v7h-8zm10 0h8v7h-8zm0-9h8v7h-8zm10 9h8v7h-8zM8 36h42c-2 7-9 10-19 10H20c-7 0-11-3-12-10Z"/><path d="M48 28c3-3 6-3 9-1-2 3-5 4-9 4"/></svg>
+                <img src="assets/docker.svg" alt="" loading="lazy">
               </span>
               <span class="technology-name">Docker</span>
               <span class="technology-category">Development</span>
             </li>
             <li class="technology-item">
               <span class="technology-icon" aria-hidden="true">
-                <img src="assets/Azure.png" alt="" loading="lazy">
+                <img src="assets/Google%20cloud.png" alt="" loading="lazy">
               </span>
               <span class="technology-name">Google Cloud</span>
               <span class="technology-category">Cloud platform</span>
@@ -269,21 +263,21 @@
             </li>
             <li class="technology-item">
               <span class="technology-icon technology-icon-shopify" aria-hidden="true">
-                <svg viewBox="0 0 64 48"><path d="M20 17h24l4 26H16l4-26Z"/><path d="M25 19a7 7 0 0 1 14 0M26 30c4 3 8-3 12 0"/></svg>
+                <img src="assets/shopify.svg" alt="" loading="lazy">
               </span>
               <span class="technology-name">Shopify</span>
               <span class="technology-category">E-commerce</span>
             </li>
             <li class="technology-item">
-              <span class="technology-icon technology-icon-rails" aria-hidden="true">
-                <svg viewBox="0 0 64 48"><path d="M32 5 52 16v16L32 43 12 32V16L32 5Z"/><text x="23" y="31">R</text></svg>
+              <span class="technology-icon" aria-hidden="true">
+                <img src="assets/Ruby_on_Rails-Logo..png" alt="" loading="lazy">
               </span>
               <span class="technology-name">Rails</span>
               <span class="technology-category">Web development</span>
             </li>
             <li class="technology-item">
               <span class="technology-icon" aria-hidden="true">
-                <img src="assets/Ruby_on_Rails-Logo..png" alt="" loading="lazy">
+                <img src="assets/woo%20commerce.png" alt="" loading="lazy">
               </span>
               <span class="technology-name">WooCommerce</span>
               <span class="technology-category">E-commerce</span>
@@ -312,37 +306,41 @@
         <h2 id="consultation-title">Tell us what you’re working on.</h2>
         <p>Share a little about your organisation and what you need. We’ll help you find a practical next step.</p>
       </div>
-      <form class="consultation-form" data-consultation-form>
-        <div class="consultation-fields">
-          <div class="consultation-field">
-            <label for="consultation-name">Your name <span aria-hidden="true">*</span></label>
-            <input id="consultation-name" name="name" autocomplete="name" required>
+      <form class="consultation-form" data-consultation-form novalidate>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="consultation-name" class="form-label">Your name <span class="text-muted" aria-hidden="true">*</span></label>
+            <input id="consultation-name" name="name" class="form-control" autocomplete="name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
           </div>
-          <div class="consultation-field">
-            <label for="consultation-email">Email address <span aria-hidden="true">*</span></label>
-            <input id="consultation-email" name="email" type="email" autocomplete="email" required>
+          <div class="col-sm-6">
+            <label for="consultation-email" class="form-label">Email address <span class="text-muted" aria-hidden="true">*</span></label>
+            <input id="consultation-email" name="email" type="email" class="form-control" autocomplete="email" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
           </div>
-          <div class="consultation-field">
-            <label for="consultation-organisation">Organisation</label>
-            <input id="consultation-organisation" name="organisation" autocomplete="organization">
+          <div class="col-sm-6">
+            <label for="consultation-organisation" class="form-label">Organisation</label>
+            <input id="consultation-organisation" name="organisation" class="form-control" autocomplete="organization">
           </div>
-          <div class="consultation-field">
-            <label for="consultation-sector">Your sector <span aria-hidden="true">*</span></label>
-            <select id="consultation-sector" name="sector" required>
+          <div class="col-sm-6">
+            <label for="consultation-sector" class="form-label">Your sector <span class="text-muted" aria-hidden="true">*</span></label>
+            <select id="consultation-sector" name="sector" class="form-select" required>
               <option value="" selected disabled>Select your sector</option>
               <option>Agriculture</option>
               <option>Education</option>
               <option>Enterprise organisation</option>
               <option>Other</option>
             </select>
+            <div class="invalid-feedback">Please select a sector.</div>
           </div>
-          <div class="consultation-field consultation-field-full">
-            <label for="consultation-project">What would you like help with? <span aria-hidden="true">*</span></label>
-            <textarea id="consultation-project" name="project" rows="5" required></textarea>
+          <div class="col-12">
+            <label for="consultation-project" class="form-label">What would you like help with? <span class="text-muted" aria-hidden="true">*</span></label>
+            <textarea id="consultation-project" name="project" class="form-control" rows="5" required></textarea>
+            <div class="invalid-feedback">Please tell us what you need help with.</div>
           </div>
         </div>
-        <div class="consultation-submit-row">
-          <p id="consultation-note">Submitting opens your email app with your message ready to send.</p>
+        <div class="consultation-submit-row mt-4">
+          <p id="consultation-note" class="mb-0">We typically respond within one business day.</p>
           <button class="consultation-submit" type="submit" aria-describedby="consultation-note">
             <span>Request a consultation</span>
             <span aria-hidden="true">↗</span>
