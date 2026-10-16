@@ -37,13 +37,15 @@ if (menuToggle && navigation) {
   });
 }
 
-const technologyTrack = document.querySelector(".technology-track");
-const technologyStatus = document.querySelector(".technology-status");
+document.querySelectorAll(".technology-carousel").forEach((carousel) => {
+  const technologyTrack = carousel.querySelector(".technology-track");
+  const technologyStatus = carousel.closest(".technology-section")?.querySelector(".technology-status");
 
-if (technologyTrack instanceof HTMLUListElement && technologyStatus) {
+  if (!(technologyTrack instanceof HTMLUListElement) || !technologyStatus) return;
+
   const technologyItems = Array.from(technologyTrack.children);
-  const previousButton = document.querySelector('[data-technology-direction="previous"]');
-  const nextButton = document.querySelector('[data-technology-direction="next"]');
+  const previousButton = carousel.closest(".technology-inner")?.querySelector('[data-technology-direction="previous"]');
+  const nextButton = carousel.closest(".technology-inner")?.querySelector('[data-technology-direction="next"]');
 
   const updateTechnologyCarousel = () => {
     const maxScroll = technologyTrack.scrollWidth - technologyTrack.clientWidth;
@@ -96,7 +98,7 @@ if (technologyTrack instanceof HTMLUListElement && technologyStatus) {
   window.addEventListener("resize", updateTechnologyCarousel);
 
   updateTechnologyCarousel();
-}
+});
 
 document.querySelectorAll("[data-consultation-form]").forEach((form) => {
   if (!(form instanceof HTMLFormElement)) {
