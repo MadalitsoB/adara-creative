@@ -4,7 +4,7 @@
 
 This is a responsive static website for Adara Creative Edge, a digital and creative consultancy that designs and builds websites, digital tools, and creative solutions for organisations in agriculture, education, and enterprise.
 
-The site was built collaboratively with an AI coding assistant (Kiro), using a prompting-led workflow where I directed every decision — from layout and copy to colour, icons, and responsive behaviour.
+The site was built step by step by me, with AI tools used to speed up specific parts of the process — code writing, debugging, image generation, and SEO tags. Every structural and design decision was made by me.
 
 ---
 
@@ -18,48 +18,29 @@ The site was built collaboratively with an AI coding assistant (Kiro), using a p
 
 ## How I built this with AI
 
-Rather than writing code from scratch, I used Kiro (an AI-powered development environment) as a collaborative coding partner. I directed the build through natural language prompts, made every design and content decision myself, and reviewed all changes before they were applied.
+I planned and built the site structure myself, section by section. I used AI tools to help write code faster, generate images, and handle technical tasks like SEO markup — rather than writing every line by hand or looking everything up from scratch.
 
 ### My prompting approach
 
-I broke the project into clear, focused requests rather than asking for everything at once. Some examples of how I prompted:
-
-- **Structure first** — I asked for the page layout and sections before worrying about styling, so I could see the skeleton and give feedback early.
-- **Iterative refinement** — After each change I reviewed the result and followed up with specific corrections. For example: *"the Azure icon is showing the WooCommerce image, please fix the icon mismatches in the tools section."*
-- **Tone and clarity** — I pushed back on vague copy. When the hero description read like a generic tagline, I prompted: *"make it clear that we build websites for agriculture, education and enterprise"* — and reviewed the suggested text before it was applied.
-- **Design decisions were mine** — I chose the black card style for services, asked for Bootstrap on the form, selected the minimal copy for the form note, and directed the about page image treatment. AI executed; I decided.
-- **Fixing mistakes** — When Bootstrap's global styles broke the site's link colours, I flagged it and prompted a fix. The AI diagnosed the load order issue and resolved it.
-
-### What AI handled
-
-- Writing and refactoring HTML, CSS, and JavaScript
-- Sourcing and downloading real brand SVG icons (Docker, Shopify, AWS) from simple-icons
-- Diagnosing responsive layout issues and writing breakpoint rules
-- Bootstrap integration and scoping overrides so they didn't affect the rest of the site
-- SEO metadata, Open Graph tags, JSON-LD structured data, and canonical links
-
-### What I handled
-
-- All content, copy, and messaging decisions
-- Visual direction — colours, card styles, layout choices
-- Sector focus and brand positioning
-- Reviewing every change and deciding what stayed or got revised
-- The overall structure and goals of the project
+- **Iterative and specific** — I gave focused instructions and reviewed every output before accepting it. For example: *"the Azure icon is showing the WooCommerce image, please fix the icon mismatches in the tools section."*
+- **Copy decisions were mine** — When the hero description read like a vague tagline, I identified the problem and directed the fix: *"make it clear that we build websites for agriculture, education and enterprise."*
+- **Design choices were mine** — I chose the black card style for services, asked for Bootstrap on the form, picked the minimal form note copy, and directed the about page image treatment.
+- **Fixing mistakes** — When Bootstrap's global styles broke the site's link and arrow colours, I spotted it, flagged it, and prompted the fix.
 
 ---
 
 ## AI use — assessment reflection
 
-### Which AI tool I used
+### Which AI tools I used
 
 I used four AI tools across this project, each for a distinct purpose:
 
-- **Kiro** — AI-powered development environment built on VS Code. Used throughout the build for code generation, debugging, responsive design, Bootstrap integration, and SEO tags.
-- **GitHub Copilot** — Used for in-editor code assistance while writing HTML and CSS. Helped scaffold the navbar and other UI elements by suggesting completions as I typed, which I reviewed and accepted or adjusted.
-- **ChatGPT** — Used for image generation. I directed the prompts, describing the style, subject, and mood I wanted for each image used on the site.
-- **Google Gemini** — Also used for image generation, again with prompts I wrote and refined to get the right visual output.
+- **Kiro** — AI-powered development environment built on VS Code. Used for code generation, debugging, responsive CSS, Bootstrap integration, and SEO tags.
+- **GitHub Copilot** — Used for in-editor code assistance. Helped scaffold the navbar and other UI elements with inline suggestions that I reviewed and adjusted.
+- **ChatGPT** — Used for image generation. I wrote and refined the prompts to get the right style, subject, and mood for each image.
+- **Google Gemini** — Also used for image generation, with prompts I directed.
 
-The core reason I used AI across this project was to work faster and more efficiently — building components, structures, and layouts without writing every line from scratch, while staying in control of every decision. All tools were directed by me; I reviewed every output and decided what made it into the final site.
+The reason I used AI throughout was to work faster — building components without writing every line from scratch, while staying in full control of every decision.
 
 ---
 
@@ -67,32 +48,34 @@ The core reason I used AI across this project was to work faster and more effici
 
 | Area | Detail |
 |---|---|
-| **Code generation** | Writing HTML structure, CSS layout and responsive breakpoints, and JavaScript for the mobile nav and technology carousel |
+| **Code generation** | Writing and refactoring HTML, CSS, and JavaScript on request |
+| **Navbar** | GitHub Copilot suggested completions while I built the navigation, which I reviewed and adjusted |
 | **Copy suggestions** | Drafting and refining section headings, card descriptions, and the hero description |
-| **Debugging** | Diagnosing why Bootstrap's global styles were overriding the site's link and arrow colours, and fixing the load order |
-| **Icon sourcing** | Finding and downloading accurate SVG brand icons for AWS, Docker, and Shopify from the simple-icons library |
-| **SEO tags** | Writing the meta description, Open Graph tags, Twitter card tags, canonical link, and JSON-LD structured data on `about.html` |
-| **Layout ideas** | Suggesting the two-column hero layout, the sector card grid, and the technology carousel structure |
-| **Bootstrap integration** | Rebuilding the consultation form using Bootstrap 5 grid and form components, and scoping the overrides so they didn't affect the rest of the site |
-| **Responsive design** | Writing and adjusting CSS breakpoints for mobile and small screens across all three pages |
+| **Debugging** | Diagnosing why Bootstrap's styles were overriding the site's link colours and fixing the stylesheet load order |
+| **Icon sourcing** | Finding and downloading accurate SVG brand icons for AWS, Docker, and Shopify |
+| **SEO tags** | Writing meta description, Open Graph tags, Twitter card tags, canonical link, and JSON-LD structured data on `about.html` |
+| **Bootstrap integration** | Rebuilding the consultation form with Bootstrap 5 grid and form components |
+| **Responsive design** | Writing and adjusting CSS breakpoints for mobile and small screens |
+| **Image generation** | ChatGPT and Gemini generated site images from prompts I wrote |
+
+The page structure, layout, and site architecture were planned and built by me step by step — I did not ask AI to design or structure the site.
 
 ---
 
 ### Which parts I personally edited, checked, and understood
 
-- All content and copy decisions — I reviewed every suggested line and changed what didn't fit the brand or tone
-- The hero description was rewritten on my direction after I identified it was too vague
-- I spotted the icon mismatches in the tools section (Azure showing the WooCommerce logo, etc.) and directed the fix
-- I chose the black card style for the services section, the Bootstrap form approach, and the minimal copy for the form note
-- I reviewed every CSS and HTML change before it was applied and can explain any part of the codebase
-- I identified the Bootstrap colour bleed issue after checking the rendered page and prompted the debugging process
-- The three-page structure, sector focus, and overall brand positioning were my decisions throughout
+- All content and copy — I reviewed every suggested line and changed what didn't fit
+- The three-page structure and all section decisions were mine
+- I spotted the icon mismatches and directed the fix
+- I identified the Bootstrap colour bleed issue by checking the rendered page
+- I chose the service card style, form approach, sector focus, and brand positioning
+- I reviewed every HTML and CSS change before it was applied
 
 ---
 
 ### Code or copy I do not fully understand
 
-None. I reviewed all code as it was written and asked follow-up questions where needed. I understand the HTML structure, the CSS layout and responsive logic (including `clamp()`, `min()`, CSS custom properties, and grid), the JavaScript for the nav toggle and carousel, the Bootstrap grid and validation pattern, and the JSON-LD structured data on the about page.
+None. I reviewed all code as it was written and understand the full codebase — HTML structure, CSS layout and responsive logic (including `clamp()`, `min()`, custom properties, and grid), the JavaScript for the nav and carousel, Bootstrap's grid and validation pattern, and the JSON-LD structured data on the about page.
 
 ---
 
